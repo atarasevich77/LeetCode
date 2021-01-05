@@ -1,4 +1,4 @@
-package com.productOfArrayExceptSelf;
+package com.arrays.productOfArrayExceptSelf;
 
 import java.util.Arrays;
 import java.util.Scanner;

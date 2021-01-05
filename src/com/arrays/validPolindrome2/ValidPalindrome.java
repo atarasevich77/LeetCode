@@ -1,4 +1,4 @@
-package com.validPolindrome2;
+package com.arrays.validPolindrome2;
 
 import java.util.Scanner;
 
