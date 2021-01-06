@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Solution {
 
     public static boolean isPalindromeRange(String s, int i, int j) {
+        //Suppose we want to know whether s[i], s[i+1], ..., s[j] form a palindrome.
+        // If i >= j then we are done. If s[i] == s[j] then we may take i++; j--.
+        // Otherwise, the palindrome must be either s[i+1], s[i+2], ..., s[j] or s[i], s[i+1], ..., s[j-1], and we should check both cases.
         for (int k = i; k <= i + (j-i) / 2; k++) {
             if (s.charAt(k) != s.charAt(j - k + i)) {
                 return false;
@@ -17,7 +20,7 @@ public class Solution {
         int lastIndex = s.length() - 1;
         for (int i = 0; i < s.length()/2; i++) {
             //Here is we check word for a palindrome
-            //Compare chars from start and end in word by they indexes. Indexes should be parallel each other
+            //Compare chars in the beginning and end in the word by they indexes. Indexes should be parallel each other
             if(s.charAt(i) != s.charAt(lastIndex - i)) {
                 int j = lastIndex - i;
                 if(isPalindromeRange(s, i+1, j) || isPalindromeRange(s, i, j-1)) {
