@@ -3,14 +3,9 @@ package com.arrays.productOfArrayExceptSelf;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ProductOfArrayExceptSelf {
+public class Solution {
 
     public static void main(String[] args) {
-        System.out.println("Product of Array Except Self\n" +
-                "Given an array nums of n integers where n > 1, " +
-                "return an array output such that output[i] is equal to the " +
-                "product of all the elements of nums except nums[i]."
-        );
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of elements: ");
         int n = sc.nextInt();
