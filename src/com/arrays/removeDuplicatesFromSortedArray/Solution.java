@@ -1,7 +1,7 @@
 package com.arrays.removeDuplicatesFromSortedArray;
 
+import com.arrays.utilities.ArrayUtils;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Solution {
 
@@ -25,20 +25,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Input array size: ");
-        int n = scanner.nextInt();
-        int[] nums = new int[n];
-        System.out.println();
-
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print("Input " + i + " element: ");
-            nums[i] = scanner.nextInt();
-            System.out.println();
-        }
-        System.out.print("Array is [");
-        Arrays.stream(nums).forEach(num -> System.out.print(num + ","));
-        System.out.print("]\n");
+        ArrayUtils arrayUtils = new ArrayUtils();
+        int[] nums = arrayUtils.inputArray();
 
         int len = removeDuplicates(nums);
 
