@@ -2,10 +2,15 @@ package com.arrays.nextPermutation;
 
 import com.arrays.utilities.ArrayUtils;
 
+import java.util.Arrays;
+
 public class Solution {
 
-    public void nextPermutation(int[] nums) {
+    public static int[] nextPermutation(int[] nums) {
+        int[] res = new int[nums.length];
 
+
+        return res;
     }
 
     public static void main(String[] args) {
@@ -14,7 +19,7 @@ public class Solution {
 
         System.out.print("\nSolve: ");
 
-        int[] result = new int[arr.length];
-
+        int[] result = nextPermutation(arr);
+        Arrays.stream(result).forEach(num -> System.out.print(num + ", "));
     }
 }
